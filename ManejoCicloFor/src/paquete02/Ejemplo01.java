@@ -16,8 +16,13 @@ public class Ejemplo01 {
         for (int i = 1; i <= 5; i++) {
             System.out.printf("%d\n", i);
 
+            
+            
             for (int j = 1; j <= 3; j++) {
-                System.out.printf("%d ", j);
+                
+                System.out.printf("%d ", i*j);
+                
+               
             }
             System.out.printf("\n-------------\n");
         }

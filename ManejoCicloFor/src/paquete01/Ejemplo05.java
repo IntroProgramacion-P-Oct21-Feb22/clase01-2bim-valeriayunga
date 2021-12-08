@@ -11,6 +11,8 @@
  */
 package paquete01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -28,16 +30,23 @@ public class Ejemplo05 {
         // 6. resultado, i[0, n]
         int resultado;
         // numero <-- 4
-        numero = 10;
+        numero = 5;
         // 8. potencia <-- 3
-        potencia = 3;
+        potencia = 2;
         // 9. resultado <-- 1
         resultado = 1;
+        
+        Scanner entrada = new Scanner(System.in);
+        
+         System.out.println("Ingrese el número");
+         numero = entrada.nextInt();
+                  System.out.println("Ingrese la potencia");
+         potencia = entrada.nextInt();
         
         for (int  contador = 1; contador <= potencia; contador++) {
             resultado = resultado * numero;
         }
-        System.out.printf("%d\n", resultado);
+        System.out.printf("Resultado: %d\n", resultado);
 
     }
 
